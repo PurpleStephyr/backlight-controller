@@ -1,0 +1,11 @@
+[Unit]
+Description=Keyboard Backlight Controller
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/backlight-controller.py
+Type=exec
+Restart=always
+
+[Install]
+WantedBy=default.target
